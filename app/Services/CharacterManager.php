@@ -1280,6 +1280,8 @@ class CharacterManager extends Service
             $character->save();
 
             if(!$character->is_myo_slot && Config::get('lorekeeper.extensions.character_TH_profile_link')) $character->profile->link = $data['link'];
+            if(!$character->is_myo_slot) $character->profile->pronoun = $data['pronoun'];
+
             $character->profile->save();
 
             $character->profile->text = $data['text'];

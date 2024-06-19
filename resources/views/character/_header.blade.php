@@ -24,6 +24,10 @@
             <a class="btn btn-outline-info float-right" data-character-id="{{ $character->id }}" href="{{ $character->profile->link }}"><i class="fas fa-home"></i> Profile</a>
         @endif
     @if(!$character->is_visible) <i class="fas fa-eye-slash"></i> @endif {!! $character->displayName !!}
+    <h5>@if($character->profile->pronoun)
+        {{ $character->profile->pronoun }}
+        @endif
+    </h5>
 </h1>
 <div class="mb-3">
     Owned by {!! $character->displayOwner !!}
