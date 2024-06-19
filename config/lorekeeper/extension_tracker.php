@@ -11,6 +11,13 @@ return [
     //     ]),
     //     'version' => '1.0.0',
     // ],
-    
+       'Character_Pronouns' => [
+        'key' => 'character_pronouns',
+        'creators' => json_encode([
+            'NotAnotherBanana' => 'https://github.com/NotAnotherBanana/',
+        ]),
+        'version' => '1.0.0',
+    ],
+
 
 ];
