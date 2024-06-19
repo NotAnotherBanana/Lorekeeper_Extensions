@@ -11,6 +11,7 @@ return [
     //     ]),
     //     'version' => '1.0.0',
     // ],
+    
        'Character_Pronouns' => [
         'key' => 'character_pronouns',
         'creators' => json_encode([
@@ -18,6 +19,4 @@ return [
         ]),
         'version' => '1.0.0',
     ],
-
-
 ];
